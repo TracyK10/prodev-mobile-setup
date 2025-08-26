@@ -14,10 +14,9 @@ export default function Index() {
           resizeMode="cover"
         >
           {/* Company Logo */}
-          <View style={styles.logoContainer}>
+          <View style={styles.companyLogo}>
             <Image 
               source={require('@/assets/images/logo.png')} 
-              style={styles.logo}
               resizeMode="contain"
             />
           </View>
@@ -25,17 +24,17 @@ export default function Index() {
           {/* Text Elements */}
           <View style={styles.textGroup}>
             <Text style={styles.textLarge}>Find your favorite place here</Text>
-            <Text style={styles.textSmall}>The best prices for over 2</Text>
+            <Text style={styles.textSmall}>The best prices for over 2 </Text>
             <Text style={styles.textSmall}>million properties worldwide</Text>
           </View>
 
           {/* Button Group */}
           <View style={styles.buttonGroup}>
-            <TouchableOpacity style={styles.primaryButton}>
-              <Text style={styles.primaryButtonText}>Join here</Text>
+            <TouchableOpacity style={styles.button}>
+              <Text style={styles.buttonText}>Join here</Text>
             </TouchableOpacity>
-            <TouchableOpacity style={styles.secondaryButton}>
-              <Text style={styles.secondaryButtonText}>Sign In</Text>
+            <TouchableOpacity style={styles.transparentButton}>
+              <Text style={styles.textSmall}>Sign In</Text>
             </TouchableOpacity>
           </View>
 
@@ -59,14 +58,11 @@ const styles = StyleSheet.create({
     width: '100%',
     height: height,
   },
-  logoContainer: {
+  companyLogo: {
+    width: '100%',
     alignItems: 'center',
-    marginTop: 60,
-    marginBottom: 40,
-  },
-  logo: {
-    width: 150,
-    height: 100,
+    padding: 20,
+    marginBottom: 50,
   },
   textGroup: {
     paddingHorizontal: 40,
@@ -93,29 +89,31 @@ const styles = StyleSheet.create({
     paddingHorizontal: 30,
     marginTop: 30,
   },
-  primaryButton: {
-    backgroundColor: '#fff',
-    padding: 15,
-    borderRadius: 25,
+  button: {
+    borderColor: 'white',
+    borderWidth: 2,
+    borderRadius: 40,
+    paddingVertical: 15,
+    paddingHorizontal: 5,
     alignItems: 'center',
-    marginBottom: 15,
+    fontSize: 20,
+    backgroundColor: 'white',
+    flex: 1,
   },
-  primaryButtonText: {
-    color: '#000',
-    fontSize: 16,
-    fontWeight: '600',
+  buttonText: {
+    color: 'black',
+    fontSize: 18,
+    fontWeight: '400',
   },
-  secondaryButton: {
-    borderWidth: 1,
-    borderColor: '#fff',
-    padding: 15,
-    borderRadius: 25,
+  transparentButton: {
+    borderColor: 'white',
+    borderWidth: 2,
+    borderRadius: 40,
+    paddingVertical: 15,
+    paddingHorizontal: 5,
     alignItems: 'center',
-  },
-  secondaryButtonText: {
-    color: '#fff',
-    fontSize: 16,
-    fontWeight: '600',
+    fontSize: 20,
+    flex: 1,
   },
   navPromptContainer: {
     position: 'absolute',
