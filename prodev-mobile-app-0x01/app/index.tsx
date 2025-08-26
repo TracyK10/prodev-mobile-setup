@@ -15,30 +15,26 @@ export default function Index() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  textContainer: {
-    marginTop: 20,
-    alignItems: 'center',
-    padding: 20,
+    backgroundColor: "#90caf9",
   },
   largeText: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#333',
-    marginBottom: 10,
+    fontSize: 30,
+    color: "#f44336",
+    marginBottom: 5,
+    fontWeight: "700",
+    fontVariant: ["small-caps"],
   },
   mediumText: {
-    fontSize: 18,
-    color: '#666',
+    fontSize: 20,
+    color: "#9c27b0",
     marginBottom: 10,
-    textAlign: 'center',
+    fontWeight: "500",
+    textAlign: "right",
   },
   smallText: {
-    fontSize: 14,
-    color: '#888',
+    fontSize: 15,
+    color: "#2196f3",
+    fontWeight: "400",
+    textAlign: "center",
   },
 });
